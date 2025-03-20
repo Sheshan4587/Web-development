@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Feedback</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <img src="assets/Logo.png" alt="logo" class="logo">
+        <P class="headertitle">GreenHorizon</P>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Ongoing Projects</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="content_ST3.html">Content</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img src="assets/plantbg.png" alt="plant" class="bgimg">
+    <section class="section1">
+        <div class="wrapper">
+            <div class="section1-content">
+                <h1 class="title">Tell us your Feedback</h1>
+                <div class="menu">
+                    <form class="form">
+                        <fieldset class="fieldset">
+                            <div id="details">
+                                <label for="name">Full Name:</label>
+                                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                                <br><br>
+
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
+                                <br><br>
+
+                                <label for="contact">Contact: </label>
+                                <input type="tel" name="contact" id="contact" pattern="[0-9]{3}[0-9]{7}"
+                                    placeholder="0719856750" required>
+                                <br><br>
+
+                                <label for="age" >Age:</label>
+                                <input type="number" name="age" id="age" min="10" required>
+                            </div>
+                            <br><br>
+                            <label for="radio">Is this your first time visiting?:</label>
+                            <br><br>
+                            <input type="radio" id="radio" name="checkbox" value="1"> Yes
+                            <input type="radio" id="radio-1" name="checkbox" value="2"> No
+                            <br><br>
+
+                            <label>If no, suggest any improvements for future:</label>
+                            <br><br>
+                            <textarea placeholder="Drop your oppinion" rows="6" cols="60" maxlength="500"></textarea>
+                            <br><br>
+
+                            <label for="date">Select a Date: </label>
+                            <input type="date" id="date" name="date">
+                            <br><br>
+
+                            <label for="comment" class="comment">Do you have any additional requests or
+                                questions?:</label>
+                            <br><br>
+                            <textarea name="comment" id="comment" rows="5" cols="60"
+                                maxlength="500"></textarea>
+                            <br><br>
+
+                            <label for="service">Would you recommend our service?</label>
+                            <br><br>
+                            <input type="radio" id="service">Yes
+                            <input type="radio" id="service-1">No
+                            <br><br>
+
+                            <label>Rate Us</label>
+                            <br><br>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5">⭐</label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4">⭐</label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3">⭐</label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2">⭐</label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1">⭐</label>
+                                <br><br>
+
+                                <div class="button">
+                                    <input type="reset" name="reset"  id="buttons" value="Reset">
+                                    <input type="submit" name="send" id="buttons-1" value="Submit">
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <img src="assets/Logo.png" class="logoFooter" alt="">
+        <div class="footerContent">
+            <div class="credits">
+                <P class="footertitle">GreenHorizon</P>
+                <p id="desfooter">Where nature meets innovation for a better tomorrow.</p>
+            </div>
+            <div class="editorspages">
+                <div class="footerlinks">
+                    <ul class="editor-list">
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="table.html">Ongoing Projects</a></li>
+                        <li><a href="profile.html">User Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footerlinks">
+                    <ul class="editor-list">
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="content_ST3.html">Content</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copy">&copy; 2025 GreenHorizon. All rights reserved. | <a href="pageEditor_ST3.html">Editor: Sheshan
+                Thisal</a></p>
+    </footer>
+</body>
+
+</html>
