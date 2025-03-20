@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - D.Sheshan Thisal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--font Import-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <!-- Header -->
+    <header id="main-header">
+        <img src="assets/Logo.png" alt="logo" class="logo">
+        <P class="headertitle">GreenHorizon</P>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Ongoing Projects</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="content_ST3.html">Content</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Background -->
+    <img src="assets/plantbg.png" alt="plant" class="bgimg">
+
+    <section class="stud">
+        <h2>D.Sheshan Thisal, student-3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="feedback">Feedback</h2>
+                <h3>Technical Description</h3>
+                <h3> HTML Structure & Key Tags</h3>
+
+                <h3>Document Setup</h3>
+
+
+                <p>
+                    <b>!DOCTYPE html</b>: Defines the document type as HTML5.
+                    <b> lang="en"</b>: Specifies the language as English.<br>
+                </p>
+
+
+                <p>head: Contains metadata, including: <b> charset="UTF-8"</b> - Ensures proper character encoding.
+                    <b> name="viewport" content="width=device-width, initial-scale=1.0"</b> - Makes the page responsive.
+                </p>
+
+                <p>link: Loads Google Fonts and external CSS styles.</p>
+
+                <h3>2. Navigation & Header</h3>
+
+                <p>header <b>="main-header"</b>: Represents the page header.
+                    nav and ul <b>="nav-links"</b>>: Creates a navigation menu with links to various pages.<br>
+                    <b>img</b>: Used for the site logo (assets/Logo.png).
+                    Main Feedback Form (Inside section class="section1")
+                </p>
+
+                <p>form class="form": Contains the feedback form elements.
+                    fieldset <b>="fieldset"</b> Groups form elements together.
+                    Input Fields:
+                    <b> type="text", input type="email", input type="tel", input type="number"</b>: Collects user data
+                    with validation.
+                </p>
+
+                <p><b>pattern="[0-9]{3}[0-9]{7}"</b> in contact field - Ensures a valid phone number format.
+                    Radio Buttons: <b> type="radio"</b> used for questions like "Is this your first time visiting?" and
+                    "Would you recommend our service?"
+                </p>
+
+                <p> <b>textarea</b> for collecting user feedback and additional requests.</p>
+
+                <p>Date Selector:
+                    <b> type="date"</b> for selecting a date.
+                    Rating System:
+                    Star rating system using input type="radio" paired with label to create a clickable rating UI.
+                    Form Buttons:
+                    <b> type="reset" - Clears the form.
+                        input type="submit" - Submits the form.
+                    </b>
+                    <b>Footer Section</b>
+
+                    Displays a logo, branding text, and additional links.
+                    Organized using div elements for layout control.
+                </p>
+
+
+
+                <hr>
+
+
+                <h3>3. css Styling</h3>
+
+                <b>.title { font-size: 30px; font-weight: bold; color: white; text-align: center; }</b>
+
+
+                Ensures large, bold, centered text for headings.
+                White color contrasts well with the background.<br>
+                <b>.form { color: whitesmoke; padding: 40px; line-height: 25px; }</b>
+
+                Improves readability with whitesmoke text, spaced-out lines, and padding for structure.
+
+                <h3>4. Layout & Structure</h3>
+
+                <b>.section1 { display: flex; justify-content: center; }</b>:
+
+                Uses Flexbox to center-align the section horizontally.
+                <b>.wrapper { display: flex; justify-content: center; height: auto; }</b>
+
+                Ensures that the form stays centrally aligned and adapts to different screen sizes.
+                <b>.section1-content { margin-top: 100px; margin-bottom: 100px; }</b>
+
+                Provides vertical spacing for a balanced layout.
+
+                <h3>5. Form Container Styling</h3>
+                <b>.menu { display: flex; justify-content: center; border-radius: 25px; backdrop-filter: blur(20px);
+                    box-shadow: 0px 0px 19px rgba(0, 0, 0, 1); background: linear-gradient(90deg, rgba(0,88,34,0) 0%,
+                    rgba(9,18,15,1) 100%); width: 60vw; }</b>
+
+                <h3>6. effect:</h3>
+                <b>backdrop-filter: blur(20px);</b> - Adds a blurred background effect.
+                <b> border-radius: 25px;</b> - Smoothens edges for a modern look.
+                <b> box-shadow: 0px 0px 19px rgba(0, 0, 0, 1);</b> - Adds depth to the form container.
+                <b> background: linear-gradient(90deg, rgba(0,88,34,0) 0%, rgba(9,18,15,1) 100%);</b> - Creates a dark
+                green gradient for aesthetic appeal.
+                <b>.fieldset { border: none; width: 100%; color: whitesmoke; }</b>
+                <br>:
+
+                Removes the default fieldset border for a cleaner design.
+                <h3>6. Input Field Styling</h3>
+
+                <b> input, textarea { border: none; padding: 10px; border-radius: 15px; background-color: rgba(30, 30,
+                    30, 0.8); resize: none; border: 1px solid rgba(255, 255, 255, 0.2); }
+                </b><br>
+                Modern form inputs:
+                <br>
+                <b>
+                    Rounded edges (border-radius: 15px;).
+                    Dark semi-transparent background.
+                    Prevents textarea resizing (resize: none;).
+                </b>
+                <b> input[type="text"], input[type="tel"], input[type="email"], input[type="number"] { color: white;
+                    width: 300px; padding: 10px; margin: 5px 0; background-color: rgba(30, 30, 30, 0.8); border: 1px
+                    solid rgba(255, 255, 255, 0.2); }</b>
+
+                Consistent form field styling across different input types.
+                <b> #age { width: 40px !important; color: white; }
+                </b>
+                Limits age field width to 40px.
+
+                <h3>7. Button Styling & Effects</h3>
+
+                <b> input[type="submit"], input[type="reset"] { cursor: pointer; margin-right: 20px; border-radius:
+                    50px;
+                    padding: 10px 30px; font-size: 20px; font-weight: bold; transition: 0.2s ease-in; }
+                </b>
+                Large, rounded buttons with a smooth transition effect.
+                <b> input[type="submit"] { background: linear-gradient(rgba(0,88,34,1), rgba(0,149,0,1),
+                    rgba(0,88,34,1)); }</b>
+
+                Creates a green gradient effect on the submit button.
+                <b> input[type="reset"] { background: whitesmoke; }</b>
+
+                Uses a white background for the reset button.
+                <b> #buttons:hover, #buttons-1:hover { transform: scale(1.15); box-shadow: 0px 0px 19px rgba(0, 0, 0,
+                    0.8); z-index: 2; }</b>
+
+                Hover effect: Slight scaling and shadow glow on hover.
+
+                <h3>8. Radio Button & Date Input Styling</h3>
+
+                <b> input[type="radio"] { margin: 10px 5px; cursor: pointer; }</b>
+
+                Adds spacing and pointer cursor for better usability.
+                <b> input[type="date"] { color: white; }</b>
+
+                Ensures consistent styling for date input.
+
+                <h3>9. Label Styling</h3>
+                <b> #details label { display: inline-block; margin: 5px 0; width: 150px; }</b>
+                Ensures labels align properly with input fields.
+                <h3> Button Container Styling</h3>
+                <b> .button { display: flex; width: 100%; justify-content: center; }</b>
+                Ensures buttons are centered within the form.
+
+                <hr>
+
+                <h3>Accessibility</h3>
+
+                <b>Correct usage of header, nav, section, footer, and fieldset</b>
+                <p>
+                    These elements provide clear page structure, making it easier for screen readers to navigate.
+                    Example: fieldset groups related form inputs, helping assistive tools understand form sections.
+                    Labels Associated with Input Fields
+                </p>
+                <p>
+                    label for="name" Full Name: input type="text" id="name"
+                    Why? The for attribute explicitly links the label to the input field, making it easier for users who
+                    rely on screen readers.
+                    Placeholder Text & Instructions
+                </p>
+                <p>
+                    Input fields have helpful placeholders like placeholder="Enter your name".
+                    Why? Provides extra guidance for users unfamiliar with the form.
+                </p>
+
+                <p>
+                    Focusable Elements Using input, textarea, and button
+                    All form fields are focusable and navigable using the Tab key.
+                    Radio buttons have proper name attributes (name="checkbox") to ensure smooth navigation.
+                </p>
+
+                <p>
+                    .button { display: flex; justify-content: center; }
+                    Why? Ensures buttons are well-positioned and clearly visible.
+                    #buttons:hover { transform: scale(1.15); }
+                    Why? Provides visual feedback when hovering over buttons.
+                </p>
+
+
+                <b>High-Contrast Text & Backgrounds</b>
+                <br>
+                <p>.title { color: white; } ensures text is readable against darker backgrounds.
+                    Why? Improves visibility for users with visual impairments.
+                    Avoiding Sole Reliance on Color
+                </p>
+                <p>
+                    Instead of just using color, the form uses labels, placeholders, and borders to differentiate
+                    elements.
+                    Why? Users with color blindness can still understand the form structure.
+                    Glassmorphism with Transparency Consideration
+                </p>
+
+                <p>
+                    .menu { backdrop-filter: blur(20px); }
+                    Why? Adds a stylish effect while maintaining readability.
+                </p>
+
+                <b></b>
+                <p>
+                    Input Field Sizing & Padding
+
+                    input, textarea { padding: 10px; }
+                    Why? Provides larger click targets, improving usability for users with motor impairments.
+                    Validation & Error Prevention
+                </p>
+                <p>
+                    input type="email" required ensures valid email format.
+                    input type="number" min="10"> prevents invalid age entries.
+                    Why? Helps users avoid errors and provides immediate feedback.
+                    Grouping Related Options with
+                    fieldset
+
+                    fieldset is used to group form fields.
+                    Why? Screen readers announce the grouping, helping users understand the form’s structure.
+
+                </p>
+                <p>
+                    Viewport Meta Tag (
+                    meta name="viewport" content="width=device-width, initial-scale=1.0"
+                    Ensures the page scales properly on mobile devices.
+                </p>
+
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the Feedback page -->
+                <p><a href="validation_ST3.html#feedbackVal">Feedback validation page</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                <h3>Link to the page</h3>
+                <p><a href="feedback.html">Feedback Form</a></p>
+            </section>
+
+            <section>
+                <h2 id="team">Team</h2>
+                <h3>Technical Description</h3>
+                <p>
+                    Document Setup
+                    DOCTYPE html - Declares HTML5 as the document type.
+                    <b>html lang="en"</b> - Specifies English as the primary language for accessibility.
+                </p>
+                <p>
+                    head Contains metadata and links external resources:
+                    Google Fonts (Bebas Neue & Poppins) for typography.
+                    External CSS Files (style.css and team.css) for styling.
+                    Header & Navigation
+                    <b>header id="main-header"</b> - Defines the page's main header.
+                    nav - Contains a structured navigation menu ul class="nav-links".
+                    Justification:
+                    Navigation links improve user experience and enable smooth site navigation.
+                    Semantic elements (header, nav) enhance SEO and accessibility.
+                    Main Content (Team Member Cards)
+                    The team members are displayed using a grid-based card layout.
+                </p>
+                <p>
+                    section class="section1" - Main section of the page.
+                    <b>div class="wrapper"</b> - Centers content and ensures responsive alignment.
+
+                    <b>h1 class="title"</b> Large heading introducing the page.
+                </p>
+                <p>
+                    Individual Team Member Cards
+                    Each team member is represented using a flexbox-based card design
+                    <b>
+                        div class="card"> → Represents a single team member’s profile.
+                        img - Displays the team member’s image.
+                        h2 class="name" - Highlights the name of the team member.
+                        h4 & ul - Provide structured details about their role and contributions.
+                    </b>
+                </p>
+                <p>
+                    Footer Contains branding, links, and additional information.
+                </p>
+
+                <hr>
+
+                <h2>CSS Styling</h2>
+
+                <p>
+                    <b>Text Styling</b>
+                    Google Fonts (Poppins & Bebas Neue) - Improve readability.
+                    .title { font-size: 30px; font-weight: bold; text-align: center; }
+                    Ensures a strong visual hierarchy for the page title.
+                    .name { font-size: 22px; font-weight: bold; }
+                    Highlights the team member’s name.
+                </p>
+                <p>
+                    <b>Layout & Positioning (Flexbox)</b>
+                    .wrapper { display: flex; justify-content: center; }
+                    Centers the main content horizontally.
+                    .cards { display: flex; flex-wrap: wrap; justify-content: center; }
+                    Arranges team member cards in a responsive layout.
+                </p>
+
+                <p>
+                    <b> Member Card Styling</b>
+                    .card { background: white; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+
+                    Applies a modern card design with:
+                    Rounded corners (border-radius: 10px).
+                    Subtle shadowing (box-shadow) for depth.
+                    .card img { width: 100%; height: auto; border-top-left-radius: 10px; border-top-right-radius: 10px;
+                    }
+
+                    Ensures responsive image scaling within the card.
+                    <br>
+                    <b>Justification:</b>
+
+                    Cards are visually distinct and easy to read.
+                    Maintains a professional look while ensuring accessibility.
+                </p>
+
+                <p>
+                    Responsive Design
+                    The page is designed to work on all screen sizes.
+
+                    Viewport Meta Tag
+                    meta name="viewport" content="width=device-width, initial-scale=1.0"
+                    Ensures mobile compatibility.
+                </p>
+
+                <h3>Accessibility</h3>
+                <p>
+                    Some users cannot use a mouse and rely on Tab navigation.
+                    Focusable Elements
+                    Navigation menu links a href="..." are focusable using Tab key.
+                    Team member cards and buttons can be navigated using keyboard shortcuts.
+                </p>
+                <p>
+                    <b>Sufficient Color Contrast for Readability</b>
+
+                    .title { color: white; } ensures text is readable against the dark background.
+                    Dark text on a light background for cards improves contrast.
+                    Why?
+
+                    Users with low vision or color blindness can read content more easily.
+                </p>
+
+
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST3.html#teamVal">Team validation page</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                <h3>Link to the page</h3>
+                <p><a href="team.html">Team Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                <h3>Technical Description</h3>
+                <p>
+                    HTML Structure & Key Tags
+                    Document Setup
+                    !DOCTYPE html - Declares HTML5 as the document type.
+                    html lang="en" - Specifies English as the page language for accessibility.
+
+                    head Contains metadata, including:
+                    meta charset="UTF-8" Ensures proper character encoding.
+                    meta name="viewport" content="width=device-width, initial-scale=1.0" -Enables responsive design.
+                    link - Imports Google Fonts (Bebas Neue, Poppins) for modern typography.
+                    link rel="stylesheet" href="style.css" and
+                    link rel="stylesheet" href="content.css" - External stylesheets for consistent styling.
+                </p>
+
+                <p>
+                    The document begins with the head section, which includes metadata such as the character encoding
+                    (UTF-8), viewport settings for responsiveness, and external resources like Google Fonts and
+                    stylesheets (style.css and content.css). The inclusion of Google Fonts (Bebas Neue and Poppins)
+                    helps maintain a modern and clean typographic style, ensuring consistency across the website. The
+                    header section contains the website’s logo and navigation bar, which is built using an unordered
+                    list
+                    ul within a nav element. This structure improves usability and accessibility by allowing easy
+                    navigation between pages.
+
+                    The main content area is wrapped inside a div class="Content" to keep the layout structured.
+                    Within this section, a main heading h1 introduces the topic, followed by multiple
+                    paragraphs p that describe the human connection with nature. Images img are
+                    included to visually reinforce the text, with appropriate alt attributes for
+                    accessibility. The br tags are used to create spacing between text and images.
+                    The second navigation bar useful to identify the each team members content.
+                    The CSS techniques applied to this page focus on typography, layout, and
+                    responsiveness. The .Content class ensures the content remains centered and
+                    maintains a consistent width across different screen sizes. The Flexbox layout
+                    (display: flex;) is likely used in content.css to properly align the content and
+                    navigation elements. Images within the content section are styled using .Content img
+                    { width: 100%; height: auto; }, ensuring they are responsive and adapt to different
+                    screen sizes without breaking the layout.The javascript part ensures the when press it scroll
+                    back to the begining of the content page.
+                <p>
+                    To enhance user experience and accessibility, the page follows best practices in
+                    color contrast, keyboard navigation, and responsive design. The high contrast
+                    between text and background improves readability, while the alt attributes on images
+                    ensure that visually impaired users can understand the content using screen readers.
+                    The footer section contains additional navigation links and branding, maintaining a
+                    clean and well-structured layout.
+                </p>
+
+                <h3>Accessibility</h3>
+                <p>
+                    Ensuring web accessibility is crucial to making the Content Page usable for all users, including
+                    those with disabilities. This page incorporates several HTML and CSS techniques to enhance
+                    readability, navigation, and overall user experience.
+
+                    One of the primary accessibility features implemented is the use of semantic HTML elements. The page
+                    structure follows a logical hierarchy, with elements like<b>
+                    header, nav, section, footer, and h1 to h4</b> used correctly. This ensures that screen readers
+                    and assistive technologies can easily interpret and navigate the content. The
+                    nav element contains an unordered list ul with properly structured <b>a</b>
+                    links, allowing keyboard users to move through the site efficiently
+                    using the Tab key.
+
+                    Images play a crucial role in conveying information, and
+                    accessibility is improved by including descriptive alt attributes
+                    for all images. For example,
+                    <b>"farmer cultivating"</b>, could be used to provide
+                    context to visually impaired users. This ensures that those who rely
+                    on screen readers still understand the visual content. Additionally,
+                    ensuring that the images scale responsively (width: 100%; height:
+                    auto;) prevents overlapping or layout-breaking issues on different
+                    devices.
+                </p>
+
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST3.html#contentVal">Content validation</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                <h3>Link to the page</h3>
+                <p><a href="content_ST3.html">Content Validation Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+
+                <p>
+
+                    Another challenge was implementing form validation and ensuring accessibility for the feedback form.
+                    Initially, the form lacked validation, and it wasn’t fully accessible to screen readers or keyboard
+                    users. I added HTML5 validation attributes like<b> required and pattern</b> for phone numbers, and
+                    improved
+                    accessibility by linking labels to inputs and ensuring all elements were focusable with the Tab key.
+                    These changes made the form more functional and inclusive.
+                </p>
+                <p>
+                    Finally, maintaining consistent styling across pages was tricky. The team and content pages had
+                    different spacing, making the site feel disjointed. To fix this, I created a
+                    shared CSS file (style.css) for global styles and used reusable classes for buttons, cards, and
+                    headings. This ensured a cohesive design across the website.
+                </p>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                <p>
+                    The Feedback, Team, and Content pages have been developed with careful consideration of the Janet
+                    Web Regulations, which govern web page publication in the UK. These regulations emphasize
+                    accessibility, usability, and security, and I have made efforts to ensure compliance with these
+                    standards. Below, I discuss how the pages align with these regulations.
+
+                    <h3> Accessibility </h3>
+                    Janet regulations require websites to be accessible to all users, including those with disabilities.
+                    To meet this requirement, I used semantic HTML elements like
+                    header, nav, and footer to structure the content logically, making it easier for screen readers to
+                    interpret. All interactive elements, such as form fields and buttons, are focusable and
+                    navigable using the Tab key, ensuring usability for keyboard-only users. Additionally, all
+                    images include descriptive alt attributes, providing context for visually impaired users.
+                    Text colors were chosen to ensure sufficient contrast against backgrounds, and font sizes
+                    are adjustable for better readability.
+                </p>
+                <p>
+                    <h3>Usability</h3>
+                    Janet regulations emphasize creating user-friendly websites. To comply, I ensured the feedback form
+                    includes HTML5 validation (e.g., required, type="email", and pattern for phone numbers) to prevent
+                    users from submitting incomplete or incorrect data. Clear labels and instructions were added to
+                    guide users through the form, improving overall usability.
+                </p>
+                <p>
+                    <h3>Compliance with Standards</h3>
+                    The pages adhere to HTML5 standards, ensuring compatibility with modern browsers. I also
+                    tested the pages using tools like W3C Validator to ensure the code is free of errors and follows
+                    best practices. While the pages are not formally audited for Janet compliance, they reflect a strong
+                    effort to align with the regulations.
+                </p>
+
+
+
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <br><br>
+                <ul class="ref">
+                    <li>
+                        Rounce, S. (2018) A group of people holding hands on top of a tree. Unsplash.
+                        Available at:
+                        <a
+                            href="https://unsplash.com/photos/a-group-of-people-holding-hands-on-top-of-a-tree-DNkoNXQti3c">
+                            https://unsplash.com/photos/a-group-of-people-holding-hands-on-top-of-a-tree-DNkoNXQti3c
+                        </a>
+                        (Accessed: 9 March 2025).
+                    </li>
+                    <li>
+                        Pexels (n.d.) Nature videos.
+                        Available at:<a href="https://www.pexels.com/search/videos/nature/">https://www.pexels.com/search/videos/nature/</a> 
+                        (Accessed: [9 March 2025]).
+                    </li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <div class="student">
+                    <li>Student 1</li>
+                    <ul class="student-list">
+                        <li><a href="#feedback">Feedback page</a></li>
+                        <li><a href="#team">Team page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                </div>
+
+
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="assets/Logo.png" class="logoFooter" alt="">
+        <div class="footerContent">
+            <div class="credits">
+                <P class="footertitle">GreenHorizon</P>
+                <p id="desfooter">Where nature meets innovation for a better tomorrow.</p>
+            </div>
+            <div class="editorspages">
+                <div class="footerlinks">
+                    <ul class="editor-list">
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="table.html">Ongoing Projects</a></li>
+                        <li><a href="profile.html">User Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footerlinks">
+                    <ul class="editor-list">
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="content_ST3.html">Content</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copy">&copy; 2025 GreenHorizon. All rights reserved. | <a href="pageEditor_ST3.html">Editor: Sheshan
+                Thisal</a></p>
+    </footer>
+</body>
+
+</html>
