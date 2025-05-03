@@ -1,0 +1,101 @@
+.section1 {
+  display: flex;
+  position: relative;
+  height: auto;
+}
+
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  color: white;
+  width: 20%;
+  background-color: rgba(9, 18, 15, 0.5);
+}
+
+.content-nav {
+  list-style: none;
+  padding: 0px;
+  margin: 120px 10px 10px 10px;
+}
+
+.content-nav li {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#content-nav-active {
+  background-color: rgb(32, 95, 64);
+  padding: 10px;
+  border-radius: 15px;
+}
+#content-nav-active a{
+  color: rgb(231, 231, 231);
+}
+
+.content-nav li a {
+  color: rgb(231, 231, 231);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content-nav li:hover {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.content-nav li:hover a{
+  color: rgb(3, 102, 3);
+  border-radius: 15px;
+}
+
+/* Content Styling */
+.Content-right {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  text-align: left;
+}
+
+.content-right-text {
+  margin: 90px 40px 20px 40px;
+}
+
+/* Paragraph Styling */
+p {
+  margin: 50px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+.homeButton {
+  position: fixed;
+  right: 2%;
+  bottom: 3%;
+  padding: 10px;
+  width: 40px;
+  background-color: white;
+  border-radius: 100%;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.copy {
+  top: 60%;
+}
+
+.contentImg {
+  height: 40vh;
+  width: auto;
+  padding: 20px 0px;
+}
