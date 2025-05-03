@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <img src="assets/Logo.png" alt="logo" class="logo">
+        <P class="headertitle">GreenHorizon</P>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Ongoing Projects</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="content_ST3.html" class="active">Content</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Background -->
+    <img src="assets/plantbg.png" class="bgimg" alt="background">
+
+    <!-- Body Content-->
+    <section class="section1">
+        <div class="page-nav">
+            <nav class="content">
+                <ul class="content-nav">
+                    <li><a href="content_ST1.html">Sustainable Living and Conservation</a></li>
+                    <li><a href="content_ST2.html">The Importance of Recycling</a></li>
+                    <li id="content-nav-active"><a href="content_ST3.html">Human Connection with Nature</a></li>
+                    <li><a href="content_ST4.html">The Role of Education in Environmental Awareness</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Content-right" id="home">
+            <div class="content-right-text">
+                <h1>Human Connection with Nature</h1>
+                <p>
+                    Throughout history, humans have shared a deep connection with the land, shaping it through
+                    agriculture, settlements, and cultural traditions.
+                    From ancient farming practices that nurtured civilizations to modern urban landscapes, the way
+                    people interact with nature reflects their values and way of life.
+                    Rural communities rely on the land for sustenance, while cities adapt green spaces to maintain a
+                    balance between development and nature.
+                    This relationship is also seen in art, literature, and traditions that celebrate the beauty and
+                    significance of landscapes.
+                    As urbanization increases, preserving this connection through sustainable practices and
+                    environmental stewardship becomes essential for a harmonious future.
+                    <br><br>
+                    <img class="contentImg" src="assets/farming.jpg" alt="farmer cultivating">
+                </p>
+                <p>
+                    As human societies have evolved, so too has their relationship with the land, shifting from deep
+                    reliance on nature to a more complex and sometimes exploitative interaction.
+                    Industrialization and technological advancements have led to rapid urban expansion, deforestation,
+                    and resource depletion, often disrupting the natural balance. However, there is a growing awareness
+                    of the need to restore and protect the environment.
+                    Sustainable farming, reforestation, and eco-friendly urban planning are being implemented to
+                    mitigate human impact and ensure the land remains fertile and livable.
+                    By fostering a renewed appreciation for nature through conservation efforts, education, and
+                    responsible land use, humanity can continue to coexist with the environment in a way that benefits
+                    both people and the planet.
+                    <br><br>
+                    <img class="contentImg" src="assets/connection.jpg" alt="connection with nature">
+                </p>
+            </div>
+        </div>
+        <img src="assets/home.png" alt="" class="homeButton" onclick="scrollToHome()">
+    </section>
+    <!-- Footer -->
+    <footer>
+        <img src="assets/Logo.png" class="logoFooter" alt="">
+        <div class="footerContent">
+            <div class="credits">
+                <P class="footertitle">GreenHorizon</P>
+                <p id="desfooter">Where nature meets innovation for a better tomorrow.</p>
+            </div>
+            <div class="editorspages">
+                <div class="footerlinks">
+                    <ul class="editor-list">
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="table.html">Ongoing Projects</a></li>
+                        <li><a href="profile.html">User Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footerlinks">
+                    <ul class="editor-list">
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="content_ST3.html">Content</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copy">&copy; 2025 GreenHorizon. All rights reserved. | <a href="pageEditor_ST3.html">Editor: Sheshan
+                Thisal</a></p>
+    </footer>
+    <script>
+        function scrollToHome() {
+            const homeSection = document.getElementById("home")
+            homeSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            })
+        }
+    </script>
+</body>
+
+</html>
